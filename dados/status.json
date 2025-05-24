@@ -1,0 +1,20 @@
+{
+    "1344037550402048000": {
+        "pvAtual": 1,
+        "pmAtual": 0.2,
+        "sanidadeAtual": 1,
+        "pv": 1,
+        "pm": 0.2,
+        "sanidade": 0
+    },
+    "443203466857283601": {
+        "pvAtual": 9,
+        "pmAtual": 10,
+        "sanidadeAtual": 31,
+        "sorteAtual": 70,
+        "pv": 9,
+        "pm": 10,
+        "sanidade": 31,
+        "sorte": 70
+    }
+}

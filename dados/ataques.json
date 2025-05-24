@@ -1,0 +1,32 @@
+{
+    "1344037550402048000": {
+        "Doze": {
+            "arma": "Doze",
+            "pericia": "Espingardas",
+            "descricao": "s\u00f3 bala tensa",
+            "dano": "4d6",
+            "municao": "2",
+            "municao_atual": 1
+        }
+    },
+    "617388399241723932": {
+        "a": {
+            "arma": "a",
+            "pericia": "Brigar",
+            "descricao": "teste",
+            "dano": "1d4",
+            "municao": "0",
+            "municao_atual": "0"
+        }
+    },
+    "443203466857283601": {
+        "Automatica.45": {
+            "arma": "Automatica.45",
+            "pericia": "Pistolas",
+            "descricao": "15m",
+            "dano": "1d10+2",
+            "municao": "7",
+            "municao_atual": 6
+        }
+    }
+}
