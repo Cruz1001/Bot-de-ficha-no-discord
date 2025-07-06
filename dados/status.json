@@ -8,13 +8,73 @@
         "sanidade": 0
     },
     "443203466857283601": {
-        "pvAtual": 9,
+        "pvAtual": 5,
         "pmAtual": 10,
-        "sanidadeAtual": 31,
-        "sorteAtual": 70,
+        "sanidadeAtual": 27,
+        "sorteAtual": 43,
         "pv": 9,
         "pm": 10,
-        "sanidade": 31,
+        "sanidade": 38,
         "sorte": 70
+    },
+    "335616634246922242": {
+        "pv": 11,
+        "pm": 11,
+        "sanidade": 61,
+        "sorte": 19,
+        "pvAtual": 11,
+        "pmAtual": 11,
+        "sanidadeAtual": 61,
+        "sorteAtual": 19
+    },
+    "727110879883034634": {
+        "pv": 13,
+        "pm": 11,
+        "sanidade": 61,
+        "sorte": 60,
+        "pvAtual": 4,
+        "pmAtual": 11,
+        "sanidadeAtual": 61,
+        "sorteAtual": 15
+    },
+    "702495104002293762": {
+        "pv": 12,
+        "pm": 12,
+        "sanidade": 65,
+        "sorte": 13,
+        "pvAtual": 12,
+        "pmAtual": 12,
+        "sanidadeAtual": 67,
+        "sorteAtual": 13
+    },
+    "445066142231298050": {
+        "pv": 10,
+        "pm": 12,
+        "sanidade": 69,
+        "sorte": 41,
+        "pvAtual": 6,
+        "pmAtual": 12,
+        "sanidadeAtual": 60,
+        "sorteAtual": 37
+    },
+    "1017131063925018744": {
+        "pv": 11,
+        "pm": 14,
+        "sanidade": 70,
+        "sorte": 54,
+        "pvAtual": 11,
+        "pmAtual": 14,
+        "sanidadeAtual": 70,
+        "sorteAtual": 54
+    },
+    "617388399241723932": {
+        "pv": 28,
+        "pm": 13,
+        "sanidade": 70,
+        "sorte": 80,
+        "pvAtual": 18,
+        "pmAtual": 13,
+        "sanidadeAtual": 70,
+        "sorteAtual": 61
     }
 }

@@ -51,9 +51,9 @@ async def criar_ficha(bot, ctx):
         "idade": idade
     }
     json_utils.atualizar_atributos(atributos)
-    pericias = {}
+    pericias = json_utils.carregar_pericias()
     pericias[conta_id] = json_utils.carregar_pericias_base()
-    print(pericias)
+    json_utils.atualizar_pericias(pericias)
     await ctx.send("Quantos pontos de pericia você tem?")
     pontos = (await bot.wait_for('message', check=lambda m: m.author == ctx.author and m.channel == ctx.channel)).content
     

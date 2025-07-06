@@ -29,7 +29,7 @@ async def criar(ctx):
     
 
 @bot.command(name='rolar')
-async def rolar(ctx, pericia):
+async def rolar(ctx, *,pericia):
     await rolar_teste(bot,ctx,pericia)
     
 @bot.command(name='inventario')
@@ -51,6 +51,7 @@ async def aprender_magia(ctx, magia, custo, sanidade, *, descricao):
 @bot.command(name='rmmagia')
 async def esquecer_magia(ctx, magia):
     magia.remover_magia(bot, ctx, magia=magia)
+    
 @bot.command(name="magias")
 async def magias(ctx):
     await magia.ver_magias(bot, ctx)

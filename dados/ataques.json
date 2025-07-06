@@ -26,7 +26,97 @@
             "descricao": "15m",
             "dano": "1d10+2",
             "municao": "7",
+            "municao_atual": 5
+        },
+        "PistolaSinalizadora": {
+            "arma": "PistolaSinalizadora",
+            "pericia": "Pistolas",
+            "descricao": "10m",
+            "dano": "1d10+1d3",
+            "municao": "1",
+            "municao_atual": "1"
+        }
+    },
+    "335616634246922242": {
+        "1911": {
+            "arma": "1911",
+            "pericia": "Pistolas",
+            "descricao": "A Perfeitinha",
+            "dano": "1d10+2",
+            "municao": "7",
             "municao_atual": 6
+        }
+    },
+    "727110879883034634": {
+        "Automatica.45": {
+            "arma": "Automatica.45",
+            "pericia": "Pistolas",
+            "descricao": "Revorve",
+            "dano": "1d10+2",
+            "municao": "7",
+            "municao_atual": 6
+        },
+        "PorreteGrande": {
+            "arma": "PorreteGrande",
+            "pericia": "Briga",
+            "descricao": "Porrete",
+            "dano": "1d8+1d4",
+            "municao": "0",
+            "municao_atual": "0"
+        }
+    },
+    "702495104002293762": {
+        "Desarmado": {
+            "arma": "Desarmado",
+            "pericia": "Brigar",
+            "descricao": "Soco",
+            "dano": "1d3",
+            "municao": "0",
+            "municao_atual": "0"
+        },
+        "Lee-Enfield": {
+            "arma": "Lee-Enfield",
+            "pericia": "Rifles",
+            "descricao": "Tiro de Rifle Lee-Enfield",
+            "dano": "2d6+4",
+            "municao": "10",
+            "municao_atual": "10"
+        },
+        "Espingarda": {
+            "arma": "Espingarda",
+            "pericia": "Rifles",
+            "descricao": "Tiro de Espingarda",
+            "dano": "1d10+7",
+            "municao": "5",
+            "municao_atual": 2
+        }
+    },
+    "445066142231298050": {
+        "Desarmado": {
+            "arma": "Desarmado",
+            "pericia": "Briga",
+            "descricao": "socos e chutes muito loucos",
+            "dano": "1d3",
+            "municao": "0",
+            "municao_atual": "0"
+        },
+        "m1911": {
+            "arma": "m1911",
+            "pericia": "Pistolas",
+            "descricao": "tiros e mais tiros",
+            "dano": "1d10+2",
+            "municao": "7",
+            "municao_atual": 4
+        }
+    },
+    "1017131063925018744": {
+        "espingarda": {
+            "arma": "espingarda",
+            "pericia": "espingarda",
+            "descricao": "tiro pa pum",
+            "dano": "4d6+2",
+            "municao": "5",
+            "municao_atual": 4
         }
     }
 }

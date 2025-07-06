@@ -73,9 +73,9 @@ async def rolar_ataque(ctx, bot, ataque):
                                 lados = int(match.group(3))
                                 modificador = int(match.group(4)) if match.group(4) else 0
                                 
-                                resultado = [random.randint(1, lados) for n in range(qntd)]
+                                rolagem = [random.randint(1, lados) for n in range(qntd)]
                                         
-                                total = sum(resultado) + modificador
+                                total = sum(rolagem) + modificador
                                 if resultado == "Extremo!":
                                         total += qntd*lados + modificador
                                 if resultado == "Crítico!":

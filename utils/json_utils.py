@@ -25,12 +25,10 @@ def atualizar_atributos(dados):
         json.dump(dados, f, indent=4)
 
 def carregar_pericias():
-    try:
-        with open("dados/pericias.json", 'r', encoding='utf-8') as f:
-            return json.load(f)
-    except FileNotFoundError:
-        print("Perícias não encontradas")
-        return {}
+    
+    with open("dados/pericias.json", 'r', encoding='utf-8') as f:
+        return json.load(f)
+  
 
 def atualizar_pericias(dados):   
     with open("dados/pericias.json", 'w', encoding='utf-8') as f:

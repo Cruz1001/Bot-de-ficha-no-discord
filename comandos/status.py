@@ -10,33 +10,35 @@ async def ver_status(bot, ctx):
     status = json_utils.carregar_status()
     atributos = json_utils.carregar_atributos()
     user_id = str(ctx.author.id)
-
+    if user_id not in status:
+        vidaMaxima = atributos[user_id].get("pv", 1)
+        manaMaxima = atributos[user_id].get("pm", 1)
+        sanidadeMaxima = atributos[user_id].get("sanidade", 1)
+        sorteMaxima = atributos[user_id].get("sorte", 100)
+        status[user_id] = {
+                "pv": vidaMaxima,
+                "pm": manaMaxima,
+                "sanidade": sanidadeMaxima,
+                "sorte": sorteMaxima, 
+                "pvAtual": vidaMaxima,
+                "pmAtual": manaMaxima,
+                "sanidadeAtual": sanidadeMaxima,
+                "sorteAtual": sorteMaxima
+        }
+        json_utils.atualizar_status(status)
     if user_id not in atributos:
         await ctx.send("⚠️ Seus atributos não foram definidos ainda. Use um comando para criar sua ficha.")
         return
 
-    # Obtém os atributos máximos do JSON de atributos
     vidaMaxima = status[user_id].get("pv", 1)
     manaMaxima = status[user_id].get("pm", 1)
     sanidadeMaxima = status[user_id].get("sanidade", 1)
     print(sanidadeMaxima)
     sorteMaxima = status[user_id].get("sorte", 100)
 
-    # Se o status ainda não existir, inicializa com os valores máximos
-    if user_id not in status:
-        status[user_id] = {
-                "pv": vidaMaxima,
-                "pm": manaMaxima,
-                "sanidade": sanidadeMaxima,
-                "sorte": sorteMaxima, 
-            "pvAtual": vidaMaxima,
-            "pmAtual": manaMaxima,
-            "sanidadeAtual": sanidadeMaxima,
-            "sorteAtual": sorteMaxima
-        }
-        json_utils.atualizar_status(status)
 
-    # Obtém os valores atuais do JSON de status
+    
+
     vidaAtual = status[user_id].get("pvAtual", vidaMaxima)
     manaAtual = status[user_id].get("pmAtual", manaMaxima)
     
@@ -44,20 +46,17 @@ async def ver_status(bot, ctx):
     print(sanidadeAtual)
     sorteAtual = status[user_id].get("sorteAtual", sorteMaxima)
 
-    # Função para gerar barras de status
     def barra(atual, maximo, emoji):
         porcentagem = (atual / maximo) * 100 if maximo else 0
         blocos_cheios = int(porcentagem / 10)
         blocos_vazios = 10 - blocos_cheios
         return emoji * blocos_cheios + "⬛" * blocos_vazios
 
-    # Gera cada barra
     barra_vida = barra(vidaAtual, vidaMaxima, "🟥")
     barra_mana = barra(manaAtual, manaMaxima, "🟪")
     barra_sanidade = barra(sanidadeAtual, sanidadeMaxima, "🟦")
     barra_sorte = barra(sorteAtual, sorteMaxima, "🟩")
 
-    # Embed com os dados
     embed = discord.Embed(title="📊 Estatísticas 📊", color=discord.Color.blue())
 
     embed.add_field(name="❤️ Vida", value=f"{barra_vida} {vidaAtual}/{vidaMaxima} HP\n\n")
